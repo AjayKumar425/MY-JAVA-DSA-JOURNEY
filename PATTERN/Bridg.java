@@ -3,7 +3,7 @@ import java.util.Scanner;
 
 public class Bridg {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+       try( Scanner sc = new Scanner(System.in)){
         int n = sc.nextInt();
 
         for(int i=1;i<=2*n-1;i++){
@@ -29,6 +29,7 @@ public class Bridg {
            System.out.println();
 
         }
+    }
     }
     
 }
